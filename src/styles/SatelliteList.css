@@ -1,0 +1,11 @@
+.sat-list-box {
+  border: 1px solid #ccc;
+  height: 410px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 5px;
+}

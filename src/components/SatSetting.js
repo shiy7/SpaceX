@@ -24,12 +24,12 @@ class SatSettingForm extends Component {
                 rules: [
                   {
                     required: true,
-                    message: "Please input your Longitude"
+                    message: "Please input Longitude"
                   }
                 ],
               }) (<InputNumber min={-180} max={180}
                                style={{width:"100%"}}
-                               placeholder= "Please input your Longitude"
+                               placeholder= "Please input Longitude"
               />)
             }
           </Form.Item>
@@ -40,12 +40,12 @@ class SatSettingForm extends Component {
                 rules: [
                   {
                     required: true,
-                    message: "Please input your Latitude"
+                    message: "Please input Latitude"
                   }
                 ],
               }) (<InputNumber min={-90} max={90}
                                style={{width:"100%"}}
-                               placeholder= "Please input your Latitude"
+                               placeholder= "Please input Latitude"
               />)
             }
           </Form.Item>
@@ -56,12 +56,12 @@ class SatSettingForm extends Component {
                 rules: [
                   {
                     required: true,
-                    message: "Please input your Elevation"
+                    message: "Please input Elevation"
                   }
                 ],
               }) (<InputNumber min={-413} max={8850}
                                style={{width:"100%"}}
-                               placeholder= "Please input your Elevation"
+                               placeholder= "Please input Elevation"
               />)
             }
           </Form.Item>
@@ -72,12 +72,12 @@ class SatSettingForm extends Component {
                 rules: [
                   {
                     required: true,
-                    message: "Please input your Altitude"
+                    message: "Please input Altitude"
                   }
                 ],
               }) (<InputNumber min={0} max={90}
                                style={{width:"100%"}}
-                               placeholder= "Please input your Altitude"
+                               placeholder= "Please input Altitude"
               />)
             }
           </Form.Item>
@@ -93,12 +93,12 @@ class SatSettingForm extends Component {
                 ],
               }) (<InputNumber min={0} max={90}
                                style={{width:"100%"}}
-                               placeholder= "Please input your Duration"
+                               placeholder= "Please input Duration"
               />)
             }
           </Form.Item>
 
-          <Form.Item label="show-nearby">
+          <Form.Item className="show-nearby">
             <Button type="primary" htmlType="submit"
                     style={{textAlign:"center"}}>
               Find Nearby Satellite
@@ -114,7 +114,7 @@ class SatSettingForm extends Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
-        this.props.onshow(values);
+        this.props.onShow(values);
       }
     })
   }
